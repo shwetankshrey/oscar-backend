@@ -1,0 +1,648 @@
+Prefix(:=<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl>
+
+Declaration(Class(:Actor))
+Declaration(Class(:Award))
+Declaration(Class(:Cinemetrics))
+Declaration(Class(:Director))
+Declaration(Class(:Distributor))
+Declaration(Class(:Human))
+Declaration(Class(:LeadActor))
+Declaration(Class(:Movie))
+Declaration(Class(:Personnel))
+Declaration(Class(:Producer))
+Declaration(Class(:Production))
+Declaration(Class(:Studio))
+Declaration(Class(:SupportActor))
+Declaration(Class(:Theme))
+Declaration(Class(:Writer))
+Declaration(Class(:YearRelease))
+Declaration(ObjectProperty(:hasActor))
+Declaration(ObjectProperty(:hasAward))
+Declaration(ObjectProperty(:hasCinemetrics))
+Declaration(ObjectProperty(:hasDirector))
+Declaration(ObjectProperty(:hasDistributor))
+Declaration(ObjectProperty(:hasLeadActor))
+Declaration(ObjectProperty(:hasPersonnel))
+Declaration(ObjectProperty(:hasProducer))
+Declaration(ObjectProperty(:hasProduction))
+Declaration(ObjectProperty(:hasStudio))
+Declaration(ObjectProperty(:hasSupportActor))
+Declaration(ObjectProperty(:hasTheme))
+Declaration(ObjectProperty(:hasWriter))
+Declaration(ObjectProperty(:hasYearRelease))
+Declaration(DataProperty(:hasAward))
+Declaration(DataProperty(:hasBoxOfficeEarning))
+Declaration(DataProperty(:hasRating))
+Declaration(DataProperty(:hasReviews))
+Declaration(NamedIndividual(:AcademyAward))
+Declaration(NamedIndividual(:Action))
+Declaration(NamedIndividual(:AllisonWilliams))
+Declaration(NamedIndividual(:Amazing_Movie))
+Declaration(NamedIndividual(:AnupamKher))
+Declaration(NamedIndividual(:Average_Movie))
+Declaration(NamedIndividual(:BAFTA))
+Declaration(NamedIndividual(:Bad_Movie))
+Declaration(NamedIndividual(:BlumhouseProductions))
+Declaration(NamedIndividual(:BradleyWhitford))
+Declaration(NamedIndividual(:ChrisMorgan))
+Declaration(NamedIndividual(:ChristophWaltz))
+Declaration(NamedIndividual(:ChristopherNolan))
+Declaration(NamedIndividual(:ColumbiaPictures))
+Declaration(NamedIndividual(:Comedy))
+Declaration(NamedIndividual(:DanielKaluuya))
+Declaration(NamedIndividual(:DavidDhawan))
+Declaration(NamedIndividual(:DjangoUnchained))
+Declaration(NamedIndividual(:EllenPage))
+Declaration(NamedIndividual(:EmmaThomas))
+Declaration(NamedIndividual(:FoxStarStudios))
+Declaration(NamedIndividual(:Furious7))
+Declaration(NamedIndividual(:GalGadot))
+Declaration(NamedIndividual(:GetOut))
+Declaration(NamedIndividual(:Good_Movie))
+Declaration(NamedIndividual(:Inception))
+Declaration(NamedIndividual(:JacquelineFernandez))
+Declaration(NamedIndividual(:JamesWan))
+Declaration(NamedIndividual(:JamieFoxx))
+Declaration(NamedIndividual(:JasonBlum))
+Declaration(NamedIndividual(:JordanPeele))
+Declaration(NamedIndividual(:JosephGordonLevitt))
+Declaration(NamedIndividual(:Judwa2))
+Declaration(NamedIndividual(:KanjiroSakura))
+Declaration(NamedIndividual(:Keegan-MichaelKey))
+Declaration(NamedIndividual(:LegendaryPictures))
+Declaration(NamedIndividual(:LeonardoDicaprio))
+Declaration(NamedIndividual(:LilRelHowery))
+Declaration(NamedIndividual(:MNightShyama))
+Declaration(NamedIndividual(:MTVAward))
+Declaration(NamedIndividual(:MichaelFottrell))
+Declaration(NamedIndividual(:MichelleRodriguez))
+Declaration(NamedIndividual(:NadiadwalaGrandsonEntertainment))
+Declaration(NamedIndividual(:Originalfilm))
+Declaration(NamedIndividual(:PaulWalker))
+Declaration(NamedIndividual(:QuentinTarantino))
+Declaration(NamedIndividual(:RazzieAward))
+Declaration(NamedIndividual(:ReginaldHudlin))
+Declaration(NamedIndividual(:Romance))
+Declaration(NamedIndividual(:SajidNadiadwala))
+Declaration(NamedIndividual(:SalmanKhan))
+Declaration(NamedIndividual(:SamuelJackson))
+Declaration(NamedIndividual(:Sci-Fi))
+Declaration(NamedIndividual(:TapseePannu))
+Declaration(NamedIndividual(:TheWeinsteinCompany))
+Declaration(NamedIndividual(:Thriller))
+Declaration(NamedIndividual(:TomHardy))
+Declaration(NamedIndividual(:UniversalPictures))
+Declaration(NamedIndividual(:VarunDhawan))
+Declaration(NamedIndividual(:VinDiesel))
+Declaration(NamedIndividual(:WarnerBrosPictures))
+Declaration(NamedIndividual(:YunusSajawal))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2010>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2012>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2015>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2017>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#3.9>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#7.2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#7.7>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#8.4>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#8.8>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#People'sChoice>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#Teen'sChoiceAward>))
+############################
+#   Object Properties
+############################
+
+# Object Property: :hasActor (:hasActor)
+
+SubObjectPropertyOf(:hasActor owl:topObjectProperty)
+ObjectPropertyDomain(:hasActor :Movie)
+ObjectPropertyRange(:hasActor :Actor)
+
+# Object Property: :hasAward (:hasAward)
+
+ObjectPropertyDomain(:hasAward :Movie)
+ObjectPropertyRange(:hasAward :Award)
+
+# Object Property: :hasCinemetrics (:hasCinemetrics)
+
+ObjectPropertyDomain(:hasCinemetrics :Movie)
+ObjectPropertyRange(:hasCinemetrics :Cinemetrics)
+
+# Object Property: :hasDirector (:hasDirector)
+
+SubObjectPropertyOf(:hasDirector owl:topObjectProperty)
+FunctionalObjectProperty(:hasDirector)
+ObjectPropertyDomain(:hasDirector :Movie)
+ObjectPropertyRange(:hasDirector :Director)
+
+# Object Property: :hasDistributor (:hasDistributor)
+
+SubObjectPropertyOf(:hasDistributor :hasStudio)
+ObjectPropertyDomain(:hasDistributor :Movie)
+ObjectPropertyRange(:hasDistributor :Distributor)
+
+# Object Property: :hasLeadActor (:hasLeadActor)
+
+SubObjectPropertyOf(:hasLeadActor :hasActor)
+ObjectPropertyDomain(:hasLeadActor :Movie)
+ObjectPropertyRange(:hasLeadActor :LeadActor)
+
+# Object Property: :hasPersonnel (:hasPersonnel)
+
+ObjectPropertyDomain(:hasPersonnel :Movie)
+ObjectPropertyRange(:hasPersonnel :Personnel)
+
+# Object Property: :hasProducer (:hasProducer)
+
+SubObjectPropertyOf(:hasProducer owl:topObjectProperty)
+ObjectPropertyDomain(:hasProducer :Movie)
+ObjectPropertyRange(:hasProducer :Producer)
+
+# Object Property: :hasProduction (:hasProduction)
+
+SubObjectPropertyOf(:hasProduction :hasStudio)
+ObjectPropertyDomain(:hasProduction :Movie)
+ObjectPropertyRange(:hasProduction :Production)
+
+# Object Property: :hasStudio (:hasStudio)
+
+ObjectPropertyDomain(:hasStudio :Movie)
+ObjectPropertyRange(:hasStudio :Studio)
+
+# Object Property: :hasSupportActor (:hasSupportActor)
+
+SubObjectPropertyOf(:hasSupportActor :hasActor)
+ObjectPropertyDomain(:hasSupportActor :Movie)
+ObjectPropertyRange(:hasSupportActor :SupportActor)
+
+# Object Property: :hasTheme (:hasTheme)
+
+ObjectPropertyDomain(:hasTheme :Movie)
+ObjectPropertyRange(:hasTheme :Theme)
+
+# Object Property: :hasWriter (:hasWriter)
+
+SubObjectPropertyOf(:hasWriter owl:topObjectProperty)
+ObjectPropertyDomain(:hasWriter :Movie)
+ObjectPropertyRange(:hasWriter :Writer)
+
+# Object Property: :hasYearRelease (:hasYearRelease)
+
+SubObjectPropertyOf(:hasYearRelease owl:topObjectProperty)
+FunctionalObjectProperty(:hasYearRelease)
+ObjectPropertyDomain(:hasYearRelease :Movie)
+ObjectPropertyRange(:hasYearRelease :YearRelease)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasAward (:hasAward)
+
+DataPropertyDomain(:hasAward :Cinemetrics)
+DataPropertyRange(:hasAward xsd:string)
+
+# Data Property: :hasBoxOfficeEarning (:hasBoxOfficeEarning)
+
+FunctionalDataProperty(:hasBoxOfficeEarning)
+DataPropertyDomain(:hasBoxOfficeEarning :Cinemetrics)
+DataPropertyRange(:hasBoxOfficeEarning xsd:int)
+
+# Data Property: :hasRating (:hasRating)
+
+FunctionalDataProperty(:hasRating)
+DataPropertyDomain(:hasRating :Cinemetrics)
+DataPropertyRange(:hasRating xsd:float)
+
+# Data Property: :hasReviews (:hasReviews)
+
+DataPropertyDomain(:hasReviews :Cinemetrics)
+DataPropertyRange(:hasReviews xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Actor (:Actor)
+
+EquivalentClasses(:Actor ObjectAllValuesFrom(:hasActor ObjectUnionOf(:LeadActor :SupportActor)))
+SubClassOf(:Actor :Personnel)
+
+# Class: :Director (:Director)
+
+SubClassOf(:Director :Personnel)
+
+# Class: :Distributor (:Distributor)
+
+SubClassOf(:Distributor :Studio)
+
+# Class: :LeadActor (:LeadActor)
+
+SubClassOf(:LeadActor :Actor)
+DisjointClasses(:LeadActor :SupportActor)
+
+# Class: :Movie (:Movie)
+
+EquivalentClasses(:Movie ObjectSomeValuesFrom(:hasActor :Actor))
+EquivalentClasses(:Movie ObjectSomeValuesFrom(:hasCinemetrics :Cinemetrics))
+EquivalentClasses(:Movie ObjectSomeValuesFrom(:hasDirector :Director))
+EquivalentClasses(:Movie ObjectSomeValuesFrom(:hasPersonnel :Personnel))
+EquivalentClasses(:Movie ObjectSomeValuesFrom(:hasProducer :Producer))
+EquivalentClasses(:Movie ObjectSomeValuesFrom(:hasStudio :Studio))
+EquivalentClasses(:Movie ObjectSomeValuesFrom(:hasTheme :Theme))
+EquivalentClasses(:Movie ObjectSomeValuesFrom(:hasWriter :Writer))
+EquivalentClasses(:Movie ObjectSomeValuesFrom(:hasYearRelease :YearRelease))
+
+# Class: :Producer (:Producer)
+
+SubClassOf(:Producer :Personnel)
+
+# Class: :Production (:Production)
+
+SubClassOf(:Production :Studio)
+
+# Class: :Studio (:Studio)
+
+EquivalentClasses(:Studio ObjectAllValuesFrom(:hasStudio ObjectUnionOf(:Distributor :Production)))
+
+# Class: :SupportActor (:SupportActor)
+
+SubClassOf(:SupportActor :Actor)
+
+# Class: :Theme (:Theme)
+
+EquivalentClasses(:Theme ObjectOneOf(:Action :Comedy :Romance :Sci-Fi :Thriller))
+
+# Class: :Writer (:Writer)
+
+SubClassOf(:Writer :Personnel)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :AcademyAward (:AcademyAward)
+
+ClassAssertion(:Award :AcademyAward)
+
+# Individual: :Action (:Action)
+
+ClassAssertion(:Theme :Action)
+
+# Individual: :AllisonWilliams (:AllisonWilliams)
+
+ClassAssertion(:Actor :AllisonWilliams)
+ClassAssertion(:LeadActor :AllisonWilliams)
+ClassAssertion(:Personnel :AllisonWilliams)
+
+# Individual: :Amazing_Movie (:Amazing_Movie)
+
+ClassAssertion(:Cinemetrics :Amazing_Movie)
+
+# Individual: :AnupamKher (:AnupamKher)
+
+ClassAssertion(:Actor :AnupamKher)
+ClassAssertion(:Personnel :AnupamKher)
+ClassAssertion(:SupportActor :AnupamKher)
+
+# Individual: :Average_Movie (:Average_Movie)
+
+ClassAssertion(:Cinemetrics :Average_Movie)
+
+# Individual: :BAFTA (:BAFTA)
+
+ClassAssertion(:Award :BAFTA)
+
+# Individual: :Bad_Movie (:Bad_Movie)
+
+ClassAssertion(:Cinemetrics :Bad_Movie)
+
+# Individual: :BlumhouseProductions (:BlumhouseProductions)
+
+ClassAssertion(:Production :BlumhouseProductions)
+
+# Individual: :BradleyWhitford (:BradleyWhitford)
+
+ClassAssertion(:Actor :BradleyWhitford)
+ClassAssertion(:Personnel :BradleyWhitford)
+ClassAssertion(:SupportActor :BradleyWhitford)
+
+# Individual: :ChrisMorgan (:ChrisMorgan)
+
+ClassAssertion(:Personnel :ChrisMorgan)
+ClassAssertion(:Writer :ChrisMorgan)
+
+# Individual: :ChristophWaltz (:ChristophWaltz)
+
+ClassAssertion(:Actor :ChristophWaltz)
+ClassAssertion(:Personnel :ChristophWaltz)
+ClassAssertion(:SupportActor :ChristophWaltz)
+
+# Individual: :ChristopherNolan (:ChristopherNolan)
+
+ClassAssertion(:Personnel :ChristopherNolan)
+ClassAssertion(:Writer :ChristopherNolan)
+
+# Individual: :ColumbiaPictures (:ColumbiaPictures)
+
+ClassAssertion(:Production :ColumbiaPictures)
+
+# Individual: :Comedy (:Comedy)
+
+ClassAssertion(:Theme :Comedy)
+
+# Individual: :DanielKaluuya (:DanielKaluuya)
+
+ClassAssertion(:Actor :DanielKaluuya)
+ClassAssertion(:LeadActor :DanielKaluuya)
+ClassAssertion(:Personnel :DanielKaluuya)
+
+# Individual: :DavidDhawan (:DavidDhawan)
+
+ClassAssertion(:Director :DavidDhawan)
+ClassAssertion(:Personnel :DavidDhawan)
+
+# Individual: :DjangoUnchained (:DjangoUnchained)
+
+ClassAssertion(:Movie :DjangoUnchained)
+
+# Individual: :EllenPage (:EllenPage)
+
+ClassAssertion(:Actor :EllenPage)
+ClassAssertion(:Personnel :EllenPage)
+ClassAssertion(:SupportActor :EllenPage)
+
+# Individual: :EmmaThomas (:EmmaThomas)
+
+ClassAssertion(:Personnel :EmmaThomas)
+ClassAssertion(:Producer :EmmaThomas)
+
+# Individual: :FoxStarStudios (:FoxStarStudios)
+
+ClassAssertion(:Distributor :FoxStarStudios)
+ClassAssertion(:Studio :FoxStarStudios)
+
+# Individual: :Furious7 (:Furious7)
+
+ClassAssertion(:Movie :Furious7)
+
+# Individual: :GalGadot (:GalGadot)
+
+ClassAssertion(:Actor :GalGadot)
+ClassAssertion(:Personnel :GalGadot)
+ClassAssertion(:SupportActor :GalGadot)
+
+# Individual: :GetOut (:GetOut)
+
+ClassAssertion(:Movie :GetOut)
+
+# Individual: :Good_Movie (:Good_Movie)
+
+ClassAssertion(:Cinemetrics :Good_Movie)
+
+# Individual: :Inception (:Inception)
+
+ClassAssertion(:Movie :Inception)
+
+# Individual: :JacquelineFernandez (:JacquelineFernandez)
+
+ClassAssertion(:Actor :JacquelineFernandez)
+ClassAssertion(:LeadActor :JacquelineFernandez)
+ClassAssertion(:Personnel :JacquelineFernandez)
+
+# Individual: :JamesWan (:JamesWan)
+
+ClassAssertion(:Director :JamesWan)
+ClassAssertion(:Personnel :JamesWan)
+
+# Individual: :JamieFoxx (:JamieFoxx)
+
+ClassAssertion(:Actor :JamieFoxx)
+ClassAssertion(:LeadActor :JamieFoxx)
+ClassAssertion(:Personnel :JamieFoxx)
+
+# Individual: :JasonBlum (:JasonBlum)
+
+ClassAssertion(:Personnel :JasonBlum)
+ClassAssertion(:Producer :JasonBlum)
+
+# Individual: :JordanPeele (:JordanPeele)
+
+ClassAssertion(:Director :JordanPeele)
+ClassAssertion(:Personnel :JordanPeele)
+
+# Individual: :JosephGordonLevitt (:JosephGordonLevitt)
+
+ClassAssertion(:Actor :JosephGordonLevitt)
+ClassAssertion(:LeadActor :JosephGordonLevitt)
+ClassAssertion(:Personnel :JosephGordonLevitt)
+
+# Individual: :Judwa2 (:Judwa2)
+
+ClassAssertion(:Movie :Judwa2)
+
+# Individual: :KanjiroSakura (:KanjiroSakura)
+
+ClassAssertion(:Director :KanjiroSakura)
+ClassAssertion(:Personnel :KanjiroSakura)
+
+# Individual: :Keegan-MichaelKey (:Keegan-MichaelKey)
+
+ClassAssertion(:Personnel :Keegan-MichaelKey)
+ClassAssertion(:Writer :Keegan-MichaelKey)
+
+# Individual: :LegendaryPictures (:LegendaryPictures)
+
+ClassAssertion(:Production :LegendaryPictures)
+
+# Individual: :LeonardoDicaprio (:LeonardoDicaprio)
+
+ClassAssertion(:Actor :LeonardoDicaprio)
+ClassAssertion(:LeadActor :LeonardoDicaprio)
+ClassAssertion(:Personnel :LeonardoDicaprio)
+
+# Individual: :LilRelHowery (:LilRelHowery)
+
+ClassAssertion(:Actor :LilRelHowery)
+ClassAssertion(:Personnel :LilRelHowery)
+ClassAssertion(:SupportActor :LilRelHowery)
+
+# Individual: :MNightShyama (:MNightShyama)
+
+ClassAssertion(:Director :MNightShyama)
+ClassAssertion(:Personnel :MNightShyama)
+
+# Individual: :MTVAward (:MTVAward)
+
+ClassAssertion(:Award :MTVAward)
+
+# Individual: :MichaelFottrell (:MichaelFottrell)
+
+ClassAssertion(:Personnel :MichaelFottrell)
+ClassAssertion(:Producer :MichaelFottrell)
+
+# Individual: :MichelleRodriguez (:MichelleRodriguez)
+
+ClassAssertion(:Actor :MichelleRodriguez)
+ClassAssertion(:Personnel :MichelleRodriguez)
+ClassAssertion(:SupportActor :MichelleRodriguez)
+
+# Individual: :NadiadwalaGrandsonEntertainment (:NadiadwalaGrandsonEntertainment)
+
+ClassAssertion(:Production :NadiadwalaGrandsonEntertainment)
+
+# Individual: :Originalfilm (:Originalfilm)
+
+ClassAssertion(:Production :Originalfilm)
+
+# Individual: :PaulWalker (:PaulWalker)
+
+ClassAssertion(:Actor :PaulWalker)
+ClassAssertion(:LeadActor :PaulWalker)
+ClassAssertion(:Personnel :PaulWalker)
+
+# Individual: :QuentinTarantino (:QuentinTarantino)
+
+ClassAssertion(:Personnel :QuentinTarantino)
+ClassAssertion(:Writer :QuentinTarantino)
+
+# Individual: :RazzieAward (:RazzieAward)
+
+ClassAssertion(:Award :RazzieAward)
+
+# Individual: :ReginaldHudlin (:ReginaldHudlin)
+
+ClassAssertion(:Personnel :ReginaldHudlin)
+ClassAssertion(:Producer :ReginaldHudlin)
+
+# Individual: :Romance (:Romance)
+
+ClassAssertion(:Theme :Romance)
+
+# Individual: :SajidNadiadwala (:SajidNadiadwala)
+
+ClassAssertion(:Personnel :SajidNadiadwala)
+ClassAssertion(:Producer :SajidNadiadwala)
+
+# Individual: :SalmanKhan (:SalmanKhan)
+
+ClassAssertion(:Actor :SalmanKhan)
+ClassAssertion(:Personnel :SalmanKhan)
+
+# Individual: :SamuelJackson (:SamuelJackson)
+
+ClassAssertion(:Actor :SamuelJackson)
+ClassAssertion(:Personnel :SamuelJackson)
+ClassAssertion(:SupportActor :SamuelJackson)
+
+# Individual: :Sci-Fi (:Sci-Fi)
+
+ClassAssertion(:Theme :Sci-Fi)
+
+# Individual: :TapseePannu (:TapseePannu)
+
+ClassAssertion(:Actor :TapseePannu)
+ClassAssertion(:Personnel :TapseePannu)
+ClassAssertion(:SupportActor :TapseePannu)
+
+# Individual: :TheWeinsteinCompany (:TheWeinsteinCompany)
+
+ClassAssertion(:Distributor :TheWeinsteinCompany)
+ClassAssertion(:Studio :TheWeinsteinCompany)
+
+# Individual: :Thriller (:Thriller)
+
+ClassAssertion(:Theme :Thriller)
+
+# Individual: :TomHardy (:TomHardy)
+
+ClassAssertion(:Actor :TomHardy)
+ClassAssertion(:Personnel :TomHardy)
+ClassAssertion(:SupportActor :TomHardy)
+
+# Individual: :UniversalPictures (:UniversalPictures)
+
+ClassAssertion(:Distributor :UniversalPictures)
+ClassAssertion(:Studio :UniversalPictures)
+
+# Individual: :VarunDhawan (:VarunDhawan)
+
+ClassAssertion(:Actor :VarunDhawan)
+ClassAssertion(:LeadActor :VarunDhawan)
+ClassAssertion(:Personnel :VarunDhawan)
+
+# Individual: :VinDiesel (:VinDiesel)
+
+ClassAssertion(:Actor :VinDiesel)
+ClassAssertion(:LeadActor :VinDiesel)
+ClassAssertion(:Personnel :VinDiesel)
+
+# Individual: :WarnerBrosPictures (:WarnerBrosPictures)
+
+ClassAssertion(:Distributor :WarnerBrosPictures)
+ClassAssertion(:Studio :WarnerBrosPictures)
+
+# Individual: :YunusSajawal (:YunusSajawal)
+
+ClassAssertion(:Personnel :YunusSajawal)
+ClassAssertion(:Writer :YunusSajawal)
+
+# Individual: <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2010> (<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2010>)
+
+ClassAssertion(:YearRelease <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2010>)
+
+# Individual: <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2012> (<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2012>)
+
+ClassAssertion(:YearRelease <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2012>)
+
+# Individual: <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2015> (<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2015>)
+
+ClassAssertion(:YearRelease <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2015>)
+
+# Individual: <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2017> (<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2017>)
+
+ClassAssertion(:YearRelease <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#2017>)
+
+# Individual: <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#3.9> (<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#3.9>)
+
+ClassAssertion(:Cinemetrics <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#3.9>)
+
+# Individual: <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#7.2> (<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#7.2>)
+
+ClassAssertion(:Cinemetrics <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#7.2>)
+
+# Individual: <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#7.7> (<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#7.7>)
+
+ClassAssertion(:Cinemetrics <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#7.7>)
+
+# Individual: <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#8.4> (<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#8.4>)
+
+ClassAssertion(:Cinemetrics <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#8.4>)
+
+# Individual: <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#8.8> (<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#8.8>)
+
+ClassAssertion(:Cinemetrics <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#8.8>)
+
+# Individual: <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#People'sChoice> (<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#People'sChoice>)
+
+ClassAssertion(:Award <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#People'sChoice>)
+
+# Individual: <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#Teen'sChoiceAward> (<http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#Teen'sChoiceAward>)
+
+ClassAssertion(:Award <http://www.semanticweb.org/aakashtanwar/ontologies/2018/11/movies.owl#Teen'sChoiceAward>)
+
+
+DisjointClasses(:Actor :Director :Producer :Writer)
+DifferentIndividuals(:Action :Comedy :Romance :Sci-Fi :Thriller)
+)
